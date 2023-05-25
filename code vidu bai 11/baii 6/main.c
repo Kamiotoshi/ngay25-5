@@ -21,6 +21,8 @@ void main(int argc, char *argv[]) {
 	n=n-1;
 	for(item=0;item<n-1;++item)
 	{
+		for(i = item + 1; i < n; ++i)
+    {
 		if(strcmp(x[item],x[i])>0){
 		
 		strcpy(temp,x[item]);
@@ -37,7 +39,7 @@ void main(int argc, char *argv[]) {
     printf("\nString %d is %s", i + 1, x[i]);
    }
  }
- 
+}
 
 
 
